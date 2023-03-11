@@ -16,3 +16,23 @@ img {
   display: block;
   max-width: 100%;
 }
+
+.timer {
+  display: flex;
+  gap: 10px;
+  font-size: larger;
+  margin-left: 20px;
+}
+.value {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  border: dashed #212121;
+  border-width: 10px;
+}
+
+.label {
+  display: flex;
+  font-size: xx-small;
+  justify-content: center;
+}
