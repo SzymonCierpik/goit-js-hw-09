@@ -67,7 +67,3 @@ function convertMs(ms) {
   const seconds = Math.floor((((ms % day) % hour) % minute) / second);
   return { days, hours, minutes, seconds };
 }
-
-// console.log(1);
-// console.log(2);
-// console.log(3);
