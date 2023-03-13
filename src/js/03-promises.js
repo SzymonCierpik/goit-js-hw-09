@@ -2,6 +2,9 @@ import Notiflix from 'notiflix';
 const form = document.querySelector(`.form`);
 
 form.addEventListener(`submit`, event => {
+  event.preventDefault();
+  // Zapobieganie wysyłaniu formularza ( bez tego nie chce działać)
+
   const inputDelay = document.querySelector(`input[name="delay"]`);
   const inputStep = document.querySelector(`input[name="step"]`);
   const inputAmount = document.querySelector(`input[name="amount"]`);
@@ -37,6 +40,6 @@ function createPromise(i, delay) {
         reject({ i, delay });
       }
     }, delay);
+    // Skrypt z treści zadania domowego
   });
-  // Skrypt z treści zadania domowego
 }
